@@ -8,12 +8,12 @@ use Symfony\Component\Routing\Annotation\Route;
 class ProstageController extends AbstractController
 {
     /**
-     * @Route("/prostage", name="prostage")
+     * @Route("/", name="prostage_accueil")
      */
     public function index()
     {
         return $this->render('prostage/index.html.twig', [
-            'controller_name' => 'ProstageController',
+            'controller_name' => 'Controleur Prostage',
         ]);
     }
 }
