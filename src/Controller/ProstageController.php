@@ -30,10 +30,10 @@ class ProstageController extends AbstractController
         return new Response("<h1>Cette page affichera la liste des formations de l'IUT</h1>");
     }
 	/**
-     * @Route("/stages/{id}", name="prostage_stages")
+     * @Route("/stages345", name="prostage_stages")
      */
     public function stages()
     {
-        return new Response("<p>Cette page affichera le descriptif du stage ayant pour identifiant </p>");
+        return $this->render('prostage/affichageStage.html.twig');
     }
 }
