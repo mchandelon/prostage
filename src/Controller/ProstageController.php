@@ -20,14 +20,14 @@ class ProstageController extends AbstractController
      */
     public function enreprises()
     {
-        return new Response("<h1>Cette page affichera la liste des entreprises proposant un stage</h1>");
+		return $this->render('prostage/entreprises.html.twig');
     }
 	/**
      * @Route("/formations", name="prostage_formations")
      */
     public function formations()
     {
-        return new Response("<h1>Cette page affichera la liste des formations de l'IUT</h1>");
+		return $this->render('prostage/formations.html.twig');
     }
 	/**
      * @Route("/stages345", name="prostage_stages")
