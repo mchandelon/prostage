@@ -13,7 +13,7 @@ class ProstageController extends AbstractController
      */
     public function accueil()
     {
-        return new Response("<h1>Bienvenue sur la page d'accueil de Prostages</h1>");
+        return $this->render('prostage/index.html.twig');
     }
 	/**
      * @Route("/entreprises", name="prostage_entreprises")
