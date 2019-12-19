@@ -1,21 +1,44 @@
 {%extends 'base.html.twig' %}
 
-{% block contenu %}
-<h1>Bienvenue sur prostage !</h1>
+{% block titrePage %}
+<h1>Liste des stages</h1>
+{% endblock %}
 
+{% block contenuPage %}
 <p>
-Vous trouverez ci-dessous les dernieres propositions de stage ajoutées sur prostage.
+<h2>Titre du stage</h2>
+Nom entreprise: Entreprise 1<br/>
+Nom formation: Formation1
 </p>
 
 <ul>
 	<li>
 		<a href="{{path('prostage_stages',{id:1})}}">Stage1</a>
 	</li>
+</ul>
+
+<h2>Titre du stage</h2>
+<p>
+Nom entreprise: Entreprise 2<br/>
+Nom formation: Formation 2
+</p>
+
+<ul>
 	<li>
 		<a href="{{path('prostage_stages',{id:2})}}">Stage2</a>
 	</li>
+</ul>
+
+<h2>Titre du stage</h2>
+<p>
+Nom entreprise: Entreprise 3<br/>
+Nom formation: Formation 3
+</p>
+
+<ul>
 	<li>
 		<a href="{{path('prostage_stages',{id:3})}}">Stage3</a>
 	</li>
 </ul>
 {% endblock %}
+

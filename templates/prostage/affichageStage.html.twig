@@ -1,9 +1,17 @@
 {%extends 'base.html.twig' %}
 
-{% block body %}
-<h1>Ressource {{idRessource}} </h1>
+{% block titrePage %}
+<h1>Stage {{idRessource}} </h1>
+{% endblock %}
 
+{% block contenuPage %}
 <p>
-Cette page affichera le descriptif du stage numéro {{idRessource}}.
+<h2>Titre du stage</h2>
+Nom: Nom1 <br/>
+Activité: activité1 <br/>
+Adresse de l'entreprise: adresse1 <br/>
+Description: description <br/>
+Formation(s): formation1 <br/>
+Email: email@gmail.com
 </p>
 {% endblock %}
